@@ -11,7 +11,7 @@ function UserProfile()  {
             <h2>
             <ImUserCheck/>
             </h2>
-            {/* <img id='userProfile' className='h-1 w-1 rounded-circle' src={'file://'+userProfile} alt="" /> */}
+            <img id='userProfile' className='h-1 w-1 rounded-circle' src={'file://'+userProfile} alt="" />
             <h5 className='p-2' >Welcome, {User}</h5>
         </div>
     </>

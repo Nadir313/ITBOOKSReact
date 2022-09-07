@@ -6,7 +6,6 @@ import {AiFillHeart  } from "react-icons/ai" ;
 import { TbBooks } from "react-icons/tb";
 import { BiSearchAlt2 } from "react-icons/bi" ;
 
-// import Witness from "./Witness" ;
 
 import SideList from './SideList';
 
@@ -15,20 +14,6 @@ function Books() {
     const [search, setSearch] = useState('') ;
 
     const [endpoint, setEndpoint ] = useState("laravel");
-
-    // const [wishlist, setwishlist] = useState({
-    //   Image:"",
-    //   title:"",
-    //   subtitle:"",
-    //   userId:""
-    // })
-
-    // const [collection, setcollection] = useState({
-    //   Image:"",
-    //   title:"",
-    //   subtitle:"",
-    //   userId:""
-    // })
     
     useEffect(()=>{
       const url = "https://api.itbook.store/1.0/search/"+endpoint;
