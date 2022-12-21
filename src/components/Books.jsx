@@ -6,7 +6,6 @@ import {AiFillHeart  } from "react-icons/ai" ;
 import { TbBooks } from "react-icons/tb";
 import { BiSearchAlt2 } from "react-icons/bi" ;
 
-// import Witness from "./Witness" ;
 
 import SideList from './SideList';
 
