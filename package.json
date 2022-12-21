@@ -1,7 +1,7 @@
 {
   "name": "fetchingdata",
   "version": "0.1.0",
-  "private": true,
+  "private": true ,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.7",
     "@testing-library/jest-dom": "^5.16.4",
