@@ -36,10 +36,12 @@
     color: darkblue;
     font-weight: bold;
 }
+
 #sign:hover{
     transition: .1s;
-    background-color: rgba(129, 250, 207, 0.7) ;
-    transform: scale(1.2);
+    border-radius: 10px;
+    background-color: rgba(196, 255, 234, 0.7) ;
+    transform: scale(1.02);
 }
 #SignUpImg{
     border: 2px solid red;
@@ -81,7 +83,7 @@ article{
     margin-top: 2.5%;
 }
 .img:hover{
-    transform: scale(1.4);
+    transform: scale(1.01);
 }
 .hero h3{
     color: darkslategrey;
@@ -100,7 +102,6 @@ article{
     font-size: 2em;
     cursor: pointer;
 }
-
 #Thewishlist{
     display: grid;
     grid-template-columns: 10% 80% 10%;
@@ -111,7 +112,7 @@ article{
     transform: scaleX(-1);
 }
 #wishlistimg:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 #wishlistTitle{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -119,12 +120,10 @@ article{
     text-align: center;
     color:black;
 }
-
 #sectionid{
     display: grid;
     grid-template-columns: 15% 85%;
 }
-
 #sideul li{
     background-color:whitesmoke;
     list-style: none;
@@ -216,12 +215,6 @@ article{
     color: darkslategrey;
 }
 
-/* 
-#cardtest{
-    border: 2px solid lightcyan ;
-    
-} */
-
 #cardtest:hover{
     /* border: 2px solid red; */
     background-color: rgba(221, 242, 248, 0.506);
@@ -254,33 +247,47 @@ article{
 }
 #signin{
     padding: 90px 0px;
-    background-image: url("../../public/images/signinbackground.webp");
+    /* background-image: url("../../public/images/signinbackground.webp"); */
+    background-color: rgba(173, 216, 230, 0.597);
     background-size: cover;
-
     display: flex;
     justify-content: center;
 }
+#signIn{
+    /* border: 2px solid red; */
+    margin-left: 60em ;
+}
+
 #icons span{
     width: 60px;
     height: 80px;
-    background-color: red;
-    
+    background-color: red; 
 }
 
 #homehover{
-    transition: .4s;
+    transition: .4s ;
 }
+
 #homehover:hover{
-    transition: .1s;
+    transition: .1s ;
     /* background-color: rgba(129, 250, 207, 0.7) ; */
-    transform: scale(1.2);
+    transform: scale(1.2) ;
 }
+
 #footerul ul li{
     /* margin-left: 30px; */
     font-weight: bold;
     text-align: center;
     list-style-type: none;
 }
+#footerul ul li a {
+    color: honeydew;
+}
+
 #footerul h4{
     text-align: center;
+ }
+
+ .list-unstyled a{
+    color: honeydew;
  }
