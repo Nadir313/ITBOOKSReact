@@ -135,7 +135,7 @@ article{
     transition-duration: 5s;
     transition: 1s;
     transform: scale(1.1);
-    background-color: azure;
+    background-color:lightslategrey;
 }
 .Card{
     font-family: 'Courier New', Courier, monospace;
