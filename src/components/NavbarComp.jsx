@@ -39,13 +39,13 @@ function NavbarComp() {
          <>     <Nav.Link id='homehover' className='mx-3 fw-bold d-flex' as={Link} to={"/Home"}> <h5 className='d-flex' > <AiFillHome /> Home</h5> </Nav.Link>
             <Nav.Link id='homehover' className='mx-3 fw-bold d-flex' as={Link} to={"/WishList"}> <h5 className='d-flex'><AiFillHeart /> WishList</h5> </Nav.Link>
             <Nav.Link id='homehover' className='mx-3 fw-bold d-flex' as={Link} to={"/MyCollection"}> <h5 className='d-flex'><TbBooks/> MyCollection</h5></Nav.Link> </> 
-            :  <Nav.Link id='homehover' className='mx-3 fw-bold d-flex' as={Link} to={"/Home"}> <h5 className='d-flex' > <AiFillHome /> Home</h5> </Nav.Link>
+            :  <Nav.Link id='homehover' className='mx-3 fw-bold d-flex' as={Link} to={"/Home"}> <h5 className='d-flex' > <AiFillHome /> Home </h5> </Nav.Link>
            }
           
-          <Form className='d-flex'>
+          <Form className='d-flex '>
           {(localStorage.getItem('userName') !== null) ? 
-            <>    <Nav.Link id='sign'  className='fw-bold'> <UserProfile  /> </Nav.Link> 
-                   <Nav.Link id='signOUT' > <h5 className='fw-bold text-danger' > Sign out <span onClick={logoutHandler}> <RiLogoutCircleRFill/> </span>  </h5></Nav.Link>
+            <>    <Nav.Link id='sign'  className=''> <UserProfile  /> </Nav.Link> 
+                   <Nav.Link id='signOUT' > <h5 className='text-secondary' > Sign out <span onClick={logoutHandler}> <RiLogoutCircleRFill/> </span>  </h5></Nav.Link>
             </> :
                  <Nav.Link id='sign'  className='fw-bold text-success' as={Link} to={"/SignIn"}> <h4>< GrLogin className='m-2 text-success'/>Sign In</h4></Nav.Link>
           }

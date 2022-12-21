@@ -15,20 +15,6 @@ function Books() {
     const [search, setSearch] = useState('') ;
 
     const [endpoint, setEndpoint ] = useState("laravel");
-
-    // const [wishlist, setwishlist] = useState({
-    //   Image:"",
-    //   title:"",
-    //   subtitle:"",
-    //   userId:""
-    // })
-
-    // const [collection, setcollection] = useState({
-    //   Image:"",
-    //   title:"",
-    //   subtitle:"",
-    //   userId:""
-    // })
     
     useEffect(()=>{
       const url = "https://api.itbook.store/1.0/search/"+endpoint;
@@ -80,11 +66,11 @@ function Books() {
   return (
     <>
 
-    <section id='sectionid' className=' w-60 '>
+    <section id='sectionid' className='w-60 '>
             <div>
                 <SideList />
             </div>         
-          <aside className='container border border-1'> 
+          <aside className='container'> 
             <div>
             <MDBCol md="5">
               <div className="form-inline mt-4 mb-4">
