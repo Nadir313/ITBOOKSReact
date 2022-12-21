@@ -135,7 +135,8 @@ article{
 #sideul li:hover{
     transition-duration: 5s;
     transition: 1s;
-    transform: scale(1.01);
+    transform: scale(1.1);
+    background-color: azure;
 }
 .Card{
     font-family: 'Courier New', Courier, monospace;
@@ -214,6 +215,7 @@ article{
 #booksContainer div span h6{
     color: darkslategrey;
 }
+
 /* 
 #cardtest{
     border: 2px solid lightcyan ;
@@ -222,11 +224,11 @@ article{
 
 #cardtest:hover{
     /* border: 2px solid red; */
-    background-color: rgb(206, 236, 246);
+    background-color: rgba(221, 242, 248, 0.506);
     font-size: medium;
     border-radius: 10px;
-    box-shadow: 0 0 80px -10px rgb(157, 152, 152);
-    transform: scale(1.1);
+    box-shadow: 0 0 10px 0px rgb(157, 152, 152);
+    transform: scale(1.05);
 }
 
 #signinform{
