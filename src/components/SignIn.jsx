@@ -32,11 +32,12 @@ function SignIn() {
     }) && validator.isEmail(user.email)
    
     ) {
-      setErrorMessage('Password is correct')
-      setEmailError('Email is valid ')
+      setErrorMessage('Password is correct') ;
+      setEmailError('Email is valid ') ;
     } else {
-      setErrorMessage('Incorrect Password')
-      setEmailError('Please Enter valid Email!')
+      setErrorMessage('Incorrect Password');
+      setEmailError('Please Enter valid Email!') ;
+      window.location.href = "http://localhost:3000/Signin"
       return ;
     }
 
@@ -61,7 +62,7 @@ function SignIn() {
           }
         })
         .catch(err => console.log(err))
-        // window.location.href = "http://localhost:3000/Home"
+        window.location.href = "http://localhost:3000/Home"
   }
   
 
@@ -105,8 +106,8 @@ function SignIn() {
         </div>
         <div className="mb-3">
         </div>
-          <button type="submit" className="btn btn-primary"> Submit </button>
-          <a  href='#' onClick={showHandler}>Create Account?</a>
+          <button type="submit" className="btn btn-primary mx-2"> Submit </button>
+          <a  href='#' onClick={showHandler}>Create Account ?</a>
       </form>
     </div>
     {show && <SignUp /> }

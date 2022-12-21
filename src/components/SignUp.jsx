@@ -27,9 +27,6 @@ function SignUp() {
 
   const submitHandler = (e)=>{
     e.preventDefault() ;
-  
-    
-    
     if(validator.isStrongPassword(data.Password, {
       minLength: 8, minLowercase: 1,
       minUppercase: 1, minNumbers: 1, minSymbols: 1
@@ -55,7 +52,7 @@ function SignUp() {
   }).catch(e=>{
       console.log(e) ;
   });
-    // window.location.href = "http://localhost:3000/SignIn" ;
+    window.location.href = "http://localhost:3000/SignIn" ;
   }
   return (
     <>

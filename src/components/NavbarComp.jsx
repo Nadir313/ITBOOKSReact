@@ -47,7 +47,7 @@ function NavbarComp() {
             <>    <Nav.Link id='sign'  className=''> <UserProfile  /> </Nav.Link> 
                    <Nav.Link id='signOUT' > <h5 className='text-secondary' > Sign out <span onClick={logoutHandler}> <RiLogoutCircleRFill/> </span>  </h5></Nav.Link>
             </> :
-                 <Nav.Link id='sign'  className='fw-bold text-success' as={Link} to={"/SignIn"}> <h4>< GrLogin className='m-2 text-success'/>Sign In</h4></Nav.Link>
+                 <Nav.Link id='signIn'  className='fw-bold text-success' as={Link} to={"/SignIn"}> <h4>< GrLogin className='m-2 text-success'/>Sign In</h4></Nav.Link>
           }
       
         

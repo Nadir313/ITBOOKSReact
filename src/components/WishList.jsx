@@ -41,7 +41,7 @@ function WishList() {
                 <div id='cardtest' key={datum.isbn} className='h-30 w-30 col-lg-4 col-md-4 col-sm-6 col-xs-12'>
                   <div className='card-header'>
                     <img src={datum.Image} alt="" />
-                    <h3 onClick={DeleteHandler(datum)} style={{color:"red"}}> <MdDeleteForever /> </h3> 
+                    <h3 onClick={DeleteHandler(datum)} style={{color:"red", cursor: "pointer"}}> <MdDeleteForever /> </h3> 
                   </div>
                   <div className='card-body'>
                     <span>

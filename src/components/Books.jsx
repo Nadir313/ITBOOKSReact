@@ -90,8 +90,8 @@ function Books() {
                            </div>
                           <div className="card-body ">
                             <span className='d-flex border border-2'>
-                             {localStorage.getItem('userId') ? <>  <h4 className='mx-2' onClick={wishListHandler(datum)} value={datum.id} style={{color:"red"}}>  <AiFillHeart />  </h4>
-                              <h4 onClick={collectionHandler(datum)} style={{color:"green"}}><TbBooks/> </h4> </> : 
+                             {localStorage.getItem('userId') ? <>  <h4 title='Add Book To wishlist' className='mx-2' onClick={wishListHandler(datum)} value={datum.id} style={{color:"red"}}>  <AiFillHeart />  </h4>
+                              <h4 title='Add Book To Collection' onClick={collectionHandler(datum)} style={{color:"green"}}><TbBooks/> </h4> </> : 
                               <><span>
                                   <p className='text-center text-muted fw-bold p-2'>{datum.title}</p>
                                 </span> </>
