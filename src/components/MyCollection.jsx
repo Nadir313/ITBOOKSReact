@@ -42,7 +42,7 @@ function MyCollection() {
               <div id='cardtest' key={book.isbn} className=' container h-30 w-30 col-lg-4 col-md-4 col-sm-6 col-xs-12'>
                 <div className='card-header'>
                   <img src={book.Image} alt="" />
-                  <h3 onClick={DeleteHandler(book)} style={{color:"red"}}> <MdDeleteForever /> </h3> 
+                  <h3 onClick={DeleteHandler(book)} style={{color:"red",cursor: "pointer"}}> <MdDeleteForever /> </h3> 
                 </div>
                 <div className='card-body'>
                   <span>
